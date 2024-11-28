@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impress.js Slideshow Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/impress.js/0.5.3/impress-demo.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/impress.js/0.5.3/impress.min.js"></script>
+    <style>
+        /* Custom Styling for Slides */
+        .step h1, .step h2 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .step p {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div id="impress">
+        <!-- Slide 1: Introduction -->
+        <div id="slide1" class="step" data-x="0" data-y="0">
+            <h1>Welcome to Impress.js</h1>
+            <p>Let's explore its features and transitions.</p>
+        </div>
+
+        <!-- Slide 2: Linear Transition -->
+        <div id="slide2" class="step" data-x="1000" data-y="0">
+            <h2>Linear Transition</h2>
+            <p>This slide moves 1000px to the right of the first slide.</p>
+        </div>
+
+        <!-- Slide 3: Vertical Movement -->
+        <div id="slide3" class="step" data-x="1000" data-y="1000">
+            <h2>Vertical Movement</h2>
+            <p>Now, we're 1000px below the previous slide.</p>
+        </div>
+
+        <!-- Slide 4: Rotation -->
+        <div id="slide4" class="step" data-x="2000" data-y="1000" data-rotate="180">
+            <h2>Rotation Effect</h2>
+            <p>This slide rotates 180 degrees compared to the previous slide.</p>
+        </div>
+
+        <!-- Slide 5: Scaling Up -->
+        <div id="slide5" class="step" data-x="3000" data-y="1000" data-scale="2">
+            <h2>Scaling Up</h2>
+            <p>This slide zooms in (scaled up by 2x).</p>
+        </div>
+
+        <!-- Slide 6: Scaling Down -->
+        <div id="slide6" class="step" data-x="3000" data-y="0" data-scale="0.5">
+            <h2>Scaling Down</h2>
+            <p>This slide zooms out (scaled down by 0.5x).</p>
+        </div>
+
+        <!-- Slide 7: Combining Effects -->
+        <div id="slide7" class="step" data-x="4000" data-y="0" data-rotate="90" data-scale="1.5">
+            <h2>Combining Effects</h2>
+            <p>This slide combines rotation (90°) and scaling (1.5x).</p>
+        </div>
+
+        <!-- Slide 8: Thank You -->
+        <div id="slide8" class="step" data-x="5000" data-y="0">
+            <h2>Thank You!</h2>
+            <p>Explore more at <a href="https://impress.js.org" target="_blank">impress.js.org</a>.</p>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Impress.js
+        impress().init();
+    </script>
+</body>
+</html>
